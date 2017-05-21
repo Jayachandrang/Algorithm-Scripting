@@ -1,0 +1,14 @@
+===> Palindrome
+
+'esversion: 6';
+const palindrome = str => str.toLowerCase().replace(/\W|_/g, '') === str.toLowerCase().replace(/\W|_/g, '').split('').reverse().join('');
+
+palindrome("eye");
+
+
+===>  Factorial
+
+'esversion: 6';
+const factorialize = num => num ? num * factorialize(num-1) : 1;
+
+factorialize(0);

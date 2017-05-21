@@ -12,3 +12,11 @@ palindrome("eye");
 const factorialize = num => num ? num * factorialize(num-1) : 1;
 
 factorialize(0);
+
+
+===> LongestWord - Return the length of the longest word in the provided sentence.
+
+'esversion:6';
+const findLongestWord = str => str.split(" ").reduce((a, b) => b.length > a ? b.length : a, 0);
+
+findLongestWord("The quick brown fox jumped over the lazy dog");
